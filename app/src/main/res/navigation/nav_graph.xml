@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catsFragment">
 
+    <fragment
+        android:id="@+id/catsFragment"
+        android:name="com.example.cattest.ui.cats.view.CatsFragment"
+        android:label="CatsFragment" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.cattest.ui.favorite.view.FavoriteFragment"
+        android:label="FavoriteFragment" />
 </navigation>
